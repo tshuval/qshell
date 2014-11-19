@@ -9,11 +9,6 @@
 * Thread-safe session environment.
 * Transform a whole module into an API shell with one line of code!
 
-# Installation
-Setting up a shell for your API is very fast and easy. Install the `qshell` package:
-
-    $ pip install qshell
-
 # Quickstart
 We will define a simple function that echoes back its input, and transform it into a shell command:
 
@@ -32,7 +27,7 @@ Save the code in a file (e.g. `my_first_api.py`) and run it from the command lin
 
     $ python my_first_api.py
 
-This will start the shel and you'll see the `>>>` prompt.
+This will start the shell and you'll see the `>>>` prompt.
 
 Let's test our command:
 
