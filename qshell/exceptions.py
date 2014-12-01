@@ -1,11 +1,11 @@
 import sys
 
 
-class qshellError(Exception):
+class QshellError(Exception):
     pass
 
 
-class CommandNotFound(qshellError):
+class CommandNotFound(QshellError):
     pass
 
 
