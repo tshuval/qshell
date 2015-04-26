@@ -163,7 +163,7 @@ class Context(object):
         """
         Parses the arguments from a string 'line'.
         Turns args like "name=john" into {'name': 'john'}.
-        Also, identify ints/floats and cast as needed.
+        Also, identify ints/floats/booleans and casts as needed.
         """
         args = []
         kwargs = {}
@@ -179,6 +179,11 @@ class Context(object):
         return args, kwargs
 
     def _cast(self, v):
+        # Cast boolean
+        if v in ('True', 'true'):
+            return True
+        if v in ('False', 'false'):
+            return False
         # Cast int/float
         try:
             fv = float(v)
